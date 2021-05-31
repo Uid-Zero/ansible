@@ -12,14 +12,14 @@
   tasks:
     - name: Copy .bash_profile from local to remote
       copy:
-        src: /home/"{{ USER }}"/.bash_profile
+        src: /home/{{ USER }}/.bash_profile
         dest: .bash_profile
         owner: "{{ USER }}"
         mode: 0744
 
     - name: Copy .bashrc from local to remote.
       copy:
-        src: /home/"{{ USER }}"/.bashrc
+        src: /home/{{ USER }}/.bashrc
         dest: .bashrc
         owner: "{{ USER }}"
         mode: 0744
